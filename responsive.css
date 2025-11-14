@@ -1,0 +1,103 @@
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .container {
+    flex-direction: column;
+    padding: 2rem 1rem;
+    gap: 3rem;
+  }
+  
+  .hero-section {
+    max-width: 100%;
+    text-align: center;
+  }
+  
+  .main-title {
+    font-size: 4rem;
+  }
+  
+  .subtitle {
+    font-size: 2rem;
+  }
+  
+  .portfolio-section {
+    height: auto;
+    justify-content: center;
+  }
+  
+  .portfolio-images {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .portfolio-item-1,
+  .portfolio-item-2 {
+    width: 100%;
+    max-width: 500px;
+    transform: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+  
+  .main-title {
+    font-size: 3rem;
+  }
+  
+  .subtitle {
+    font-size: 1.5rem;
+    letter-spacing: 0.2rem;
+  }
+  
+  .description {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .social-links {
+    max-width: 100%;
+  }
+  
+  .social-text {
+    font-size: 0.9rem;
+  }
+  
+  .portfolio-item-1,
+  .portfolio-item-2 {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-title {
+    font-size: 2.5rem;
+  }
+  
+  .subtitle {
+    font-size: 1.2rem;
+  }
+  
+  .description {
+    font-size: 0.9rem;
+  }
+  
+  .social-item {
+    gap: 0.8rem;
+  }
+  
+  .social-icon {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .social-text {
+    font-size: 0.8rem;
+  }
+  
+  .portfolio-item-1,
+  .portfolio-item-2 {
+    max-width: 300px;
+  }
+}

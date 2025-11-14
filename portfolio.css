@@ -1,0 +1,79 @@
+/* Portfolio Section Styles */
+.portfolio-section {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+}
+
+.portfolio-images {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  height: 100%;
+  position: relative;
+}
+
+.portfolio-item {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.portfolio-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.portfolio-item-1 {
+  width: 650px;
+  height: auto;
+  z-index: 2;
+}
+
+.portfolio-item-2 {
+  width: 650px;
+  height: auto;
+  margin-top: 5rem;
+}
+
+.portfolio-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.portfolio-item:hover .portfolio-image {
+  transform: scale(1.05);
+}
+
+.portfolio-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(64, 68, 77, 0.25);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.portfolio-item:hover .portfolio-overlay {
+  opacity: 1;
+}
+
+/* Portfolio Item Specific Positioning */
+.portfolio-item-1 {
+  transform: translateY(-10rem);
+}
+
+.portfolio-item-2 {
+  transform: translateY(2rem);
+}
